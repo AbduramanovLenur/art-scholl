@@ -12,6 +12,10 @@ a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
+    font-family: inherit;
+}
+button {
+    font-family: inherit;
 }
 li {
     list-style: none;
@@ -25,5 +29,22 @@ img {
     max-width: 1550px;
     margin: 0 auto;
 }
+.btn {
+    display: block;
+    background-color: #f93264;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 9px 41px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: #ff0000;
+    }
+}
 
-@import 'blocks/header';
+@import "blocks/header";
+@import "blocks/intro";
+
+@import "media/intro-m";

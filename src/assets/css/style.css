@@ -14,6 +14,11 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
 }
 
 li {
@@ -31,6 +36,22 @@ img {
   margin: 0 auto;
 }
 
+.btn {
+  display: block;
+  background-color: #f93264;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.4;
+  padding: 9px 41px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: #ff0000;
+}
+
 .header {
   padding-top: 52px;
 }
@@ -46,19 +67,7 @@ img {
           justify-content: space-between;
 }
 .header__btn {
-  display: block;
-  background-color: #F93264;
-  border: none;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1.4;
   padding: 9px 16px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.header__btn:hover {
-  background-color: #ff0000;
 }
 
 .menu {
@@ -80,4 +89,82 @@ img {
 }
 .menu__link:hover {
   color: #ff0000;
+}
+
+.intro {
+  padding: 17px 0 98px;
+}
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/intro/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+.intro__title {
+  font-size: 96px;
+  line-height: 1.43;
+  max-width: 979px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.intro__subtitle {
+  margin-top: 81px;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #00213c;
+  text-align: center;
+  max-width: 829px;
+}
+.intro__text {
+  line-height: 1.4;
+  font-weight: 500;
+  color: #152836;
+  max-width: 572px;
+  text-align: center;
+  margin-top: 21px;
+}
+.intro__descr {
+  font-size: 17px;
+  line-height: 1.4;
+  max-width: 708px;
+  text-align: center;
+  margin-top: 12px;
+}
+.intro__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+.intro__trial {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #595858;
+  padding: 0 35px;
+}
+
+.txt-black {
+  margin-top: 139px;
+}
+
+.txt-light {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+  margin-top: -215px;
+  margin-left: -208px;
 }
