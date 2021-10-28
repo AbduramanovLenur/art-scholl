@@ -1,0 +1,42 @@
+.header {
+    padding-top: 52px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btn {
+        display: block;
+        background-color: #F93264;
+        border: none;
+        color: #fff;
+        font-size: 17px;
+        line-height: 1.4;
+        padding: 9px 16px;
+        cursor: pointer;
+        transition: all .5s ease;
+        &:hover {
+            background-color: #ff0000;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    margin-right: 74px;
+    margin-left: auto;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 58px;
+        }
+    }
+    &__link {
+        font-size: 17px;
+        line-height: 1.4;
+        font-weight: 500;
+        transition: all .3s ease;
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
