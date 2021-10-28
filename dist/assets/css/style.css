@@ -168,3 +168,29 @@ img {
   margin-top: -215px;
   margin-left: -208px;
 }
+
+@media (max-width: 1024px) {
+  .intro__title {
+    font-size: 71px;
+  }
+  .intro__subtitle {
+    margin-top: 74px;
+    font-size: 35px;
+  }
+
+  .menu {
+    margin-right: 30px;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .txt-black {
+    margin-top: 66px;
+  }
+
+  .txt-light {
+    margin-top: -164px;
+    margin-left: -92px;
+  }
+}
