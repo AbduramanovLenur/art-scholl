@@ -253,12 +253,19 @@ img {
   }
 }
 @media (max-width: 1024px) {
+  .nav {
+    margin-right: 20px;
+  }
+
   .intro__title {
     font-size: 57px;
   }
   .intro__subtitle {
     margin-top: 74px;
     font-size: 35px;
+  }
+  .intro__item:not(:last-child) {
+    margin-right: 30px;
   }
 
   .menu {
