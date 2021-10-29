@@ -5,6 +5,7 @@ const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
 const dist = "./dist/";
+const distJS = './dist/js/';
 // const dist = "C:/OpenServer/domains/project-3"
 
 gulp.task("copy-html", () => {
@@ -41,7 +42,7 @@ gulp.task("build-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest(dist))
+                .pipe(gulp.dest(distJS))
                 .on("end", browsersync.reload);
 });
 
@@ -95,7 +96,7 @@ gulp.task("build-prod-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest(dist));
+                .pipe(gulp.dest(distJS));
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));

@@ -22,3 +22,15 @@
         margin-left: -92px;
     }
 }
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .header__btn {
+        display: none;
+    }
+}

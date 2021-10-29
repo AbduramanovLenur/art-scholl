@@ -90,10 +90,41 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 
+document.addEventListener('DOMContentLoaded', function () {
+  Object(_modules_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.hamburger', '.hamburger__menu', '.hamburger__close');
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/burger.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/burger.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var burger = function burger(selectorHamburger, selectorMenu, selectorClose) {
+  var hamburger = document.querySelector(selectorHamburger);
+  var menu = document.querySelector(selectorMenu);
+  var close = document.querySelector(selectorClose);
+  hamburger.addEventListener('click', function () {
+    menu.classList.add('active');
+  });
+  close.addEventListener('click', function () {
+    menu.classList.remove('active');
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (burger);
 
 /***/ })
 
