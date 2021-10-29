@@ -70,12 +70,15 @@ img {
   padding: 9px 16px;
 }
 
+.nav {
+  margin-right: 74px;
+  margin-left: auto;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 74px;
-  margin-left: auto;
 }
 .menu__item:not(:last-child) {
   margin-right: 58px;

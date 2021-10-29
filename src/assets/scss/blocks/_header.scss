@@ -9,11 +9,12 @@
         padding: 9px 16px;
     }
 }
-
-.menu {
-    display: flex;
+.nav {
     margin-right: 74px;
     margin-left: auto;
+}
+.menu {
+    display: flex;
     &__item {
         &:not(:last-child) {
             margin-right: 58px;
