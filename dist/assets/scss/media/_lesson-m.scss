@@ -1,0 +1,47 @@
+@media (max-width: 1280px) {
+    .lesson {
+        &__descr {
+            max-width: 800px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .lesson {
+        &__title {
+            margin-bottom: 45px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__descr {
+            max-width: 500px;
+        }
+        &__brushes {
+            max-width: 240px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .lesson {
+        padding: 35px 0 124px;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__brushes {
+            max-width: 145px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .lesson__brushes {
+        max-width: 110px;
+    }
+}
+@media (max-width: 320px) {
+    .lesson__list {
+        margin-bottom: 40px;
+    }
+    .lesson__descr {
+        font-size: 17px;
+    }
+}

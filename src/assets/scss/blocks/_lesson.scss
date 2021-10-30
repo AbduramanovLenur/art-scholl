@@ -1,5 +1,5 @@
 .lesson {
-    padding: 90px 124px;
+    padding: 90px 0 124px;
     background-color: #fa3465;
     background-image: url("../img/lesson/lesson-bg.png");
     background-size: cover;
@@ -11,9 +11,13 @@
     }
     &__list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 36px 171px;
         margin-bottom: 81px;
+    }
+    &__item {
+        max-width: 392px;
     }
     &__number {
         font-family: "Kalam", cursive;

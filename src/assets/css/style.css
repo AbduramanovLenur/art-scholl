@@ -309,7 +309,7 @@ img {
 }
 
 .lesson {
-  padding: 90px 124px;
+  padding: 90px 0 124px;
   background-color: #fa3465;
   background-image: url("../img/lesson/lesson-bg.png");
   background-size: cover;
@@ -324,10 +324,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 36px 171px;
   margin-bottom: 81px;
+}
+.lesson__item {
+  max-width: 392px;
 }
 .lesson__number {
   font-family: "Kalam", cursive;
@@ -417,7 +423,7 @@ img {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    top: 14%;
+    top: 10%;
     right: 10%;
   }
 
@@ -550,5 +556,49 @@ img {
   }
   .info__descr-text {
     font-size: 18px;
+  }
+}
+@media (max-width: 1280px) {
+  .lesson__descr {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1024px) {
+  .lesson__title {
+    margin-bottom: 45px;
+  }
+  .lesson__text {
+    font-size: 20px;
+  }
+  .lesson__descr {
+    max-width: 500px;
+  }
+  .lesson__brushes {
+    max-width: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .lesson {
+    padding: 35px 0 124px;
+  }
+  .lesson__title {
+    margin-bottom: 20px;
+  }
+  .lesson__brushes {
+    max-width: 145px;
+  }
+}
+@media (max-width: 500px) {
+  .lesson__brushes {
+    max-width: 110px;
+  }
+}
+@media (max-width: 320px) {
+  .lesson__list {
+    margin-bottom: 40px;
+  }
+
+  .lesson__descr {
+    font-size: 17px;
   }
 }
