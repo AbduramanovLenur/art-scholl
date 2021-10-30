@@ -1,0 +1,49 @@
+.lesson {
+    padding: 90px 124px;
+    background-color: #fa3465;
+    background-image: url("../img/lesson/lesson-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &__title {
+        color: #fff;
+        margin-bottom: 65px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px 171px;
+        margin-bottom: 81px;
+    }
+    &__number {
+        font-family: "Kalam", cursive;
+        font-size: 36px;
+        line-height: 1.58;
+        color: #260e4d;
+    }
+    &__text {
+        font-size: 26px;
+        line-height: 1.4;
+        color: #fff;
+        max-width: 392px;
+        span {
+            font-weight: 500;
+            color: #260e4d;
+        }
+    }
+    &__descr {
+        max-width: 1027px;
+        font-size: 26px;
+        line-height: 1.42;
+        color: #fff;
+    }
+    &__brushes {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: cover;
+    }
+}
+.title-mb {
+    margin-bottom: 36px;
+}
