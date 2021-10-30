@@ -12,7 +12,7 @@
         max-width: 797px;
         margin-top: 13px;
         span {
-            color: #0088FE;
+            color: #0088fe;
         }
     }
     &__text {
@@ -20,17 +20,22 @@
         line-height: 1.42;
         font-weight: 600;
         max-width: 1155px;
-        color: #22303B;
+        color: #22303b;
         margin-top: 54px;
         margin-bottom: 85px;
     }
     &__list {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 123px;
     }
     &__item {
         &:nth-child(2) {
             margin-top: -180px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 60px;
         }
     }
     &__box {
@@ -46,7 +51,8 @@
         &-title {
             font-size: 28px;
             line-height: 1.42;
-            color:#FA3465;
+            color: #fa3465;
         }
     }
 }
+
