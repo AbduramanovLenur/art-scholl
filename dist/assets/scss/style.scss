@@ -6,6 +6,7 @@
 body {
     font-family: "Jost", sans-serif;
     font-size: 20px;
+    line-height: 1.4;
     // font-family: "Kalam", cursive;
 }
 a {
@@ -43,9 +44,16 @@ img {
         background-color: #ff0000;
     }
 }
+.title {
+    font-size: 38px;
+    line-height: 1.44;
+    font-weight: 600;
+    color: #00213C;
+}
 
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/burger";
+@import "blocks/info";
 
 @import "media/intro-m";

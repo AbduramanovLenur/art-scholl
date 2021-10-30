@@ -8,6 +8,7 @@
 body {
   font-family: "Jost", sans-serif;
   font-size: 20px;
+  line-height: 1.4;
 }
 
 a {
@@ -50,6 +51,13 @@ img {
 }
 .btn:hover {
   background-color: #ff0000;
+}
+
+.title {
+  font-size: 38px;
+  line-height: 1.44;
+  font-weight: 600;
+  color: #00213C;
 }
 
 .header {
@@ -238,6 +246,60 @@ img {
   color: #fff;
 }
 
+.info {
+  position: relative;
+  padding: 90px 0 115px;
+}
+.info__figure {
+  position: absolute;
+  right: 0;
+  top: -61px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -10;
+}
+.info__subtitle {
+  max-width: 797px;
+  margin-top: 13px;
+}
+.info__subtitle span {
+  color: #0088FE;
+}
+.info__text {
+  font-size: 28px;
+  line-height: 1.42;
+  font-weight: 600;
+  max-width: 1155px;
+  color: #22303B;
+  margin-top: 54px;
+  margin-bottom: 85px;
+}
+.info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 123px;
+}
+.info__item:nth-child(2) {
+  margin-top: -180px;
+}
+.info__box {
+  position: relative;
+}
+.info__descr {
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+  background-color: #fff;
+  max-width: 460px;
+  padding: 9px 16px 21px;
+}
+.info__descr-title {
+  font-size: 28px;
+  line-height: 1.42;
+  color: #FA3465;
+}
+
 @media (max-width: 1280px) {
   .txt-black {
     margin-top: 84px;
@@ -292,6 +354,8 @@ img {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    top: 15%;
+    right: 10%;
   }
 
   .menu {

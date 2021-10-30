@@ -47,9 +47,10 @@
     }
 }
 @media (max-width: 768px) {
-    
     .hamburger {
         display: block;
+        top: 15%;
+        right: 10%;
     }
     .menu {
         display: none;
@@ -114,5 +115,3 @@
         margin-top: 20px;
     }
 }
-
-

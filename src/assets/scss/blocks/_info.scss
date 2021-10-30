@@ -1,0 +1,52 @@
+.info {
+    position: relative;
+    padding: 90px 0 115px;
+    &__figure {
+        position: absolute;
+        right: 0;
+        top: -61px;
+        object-fit: contain;
+        z-index: -10;
+    }
+    &__subtitle {
+        max-width: 797px;
+        margin-top: 13px;
+        span {
+            color: #0088FE;
+        }
+    }
+    &__text {
+        font-size: 28px;
+        line-height: 1.42;
+        font-weight: 600;
+        max-width: 1155px;
+        color: #22303B;
+        margin-top: 54px;
+        margin-bottom: 85px;
+    }
+    &__list {
+        display: flex;
+        margin-top: 123px;
+    }
+    &__item {
+        &:nth-child(2) {
+            margin-top: -180px;
+        }
+    }
+    &__box {
+        position: relative;
+    }
+    &__descr {
+        position: absolute;
+        bottom: -45px;
+        right: 0;
+        background-color: #fff;
+        max-width: 460px;
+        padding: 9px 16px 21px;
+        &-title {
+            font-size: 28px;
+            line-height: 1.42;
+            color:#FA3465;
+        }
+    }
+}
