@@ -1,0 +1,59 @@
+.workshop {
+    padding: 90px 63px;
+    position: relative;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content {
+        max-width: 819px;
+    }
+    &__title {
+        margin-bottom: 52px;
+        z-index: 4;
+    }
+    &__maintext {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 23px;
+        padding-left: 82px;
+    }
+    &__subtext {
+        max-width: 626px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        padding-left: 82px;
+        span {
+            font-weight: 600;
+            color: #0088fe;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        padding-left: 82px;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__pic {
+        border: 2px solid #fdc812;
+        min-height: 733px;
+        max-width: 582px;
+        width: 100%;
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        top: -50px;
+        left: 37px;
+    }
+    &__figure {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        z-index: -14;
+    }
+}

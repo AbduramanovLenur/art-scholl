@@ -452,7 +452,74 @@ img {
 .people__figure {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -40px;
+}
+
+.workshop {
+  padding: 90px 63px;
+  position: relative;
+}
+.workshop__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.workshop__content {
+  max-width: 819px;
+}
+.workshop__title {
+  margin-bottom: 52px;
+  z-index: 4;
+}
+.workshop__maintext {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 23px;
+  padding-left: 82px;
+}
+.workshop__subtext {
+  max-width: 626px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 82px;
+}
+.workshop__subtext span {
+  font-weight: 600;
+  color: #0088fe;
+}
+.workshop__text {
+  font-weight: 500;
+  padding-left: 82px;
+}
+.workshop__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+.workshop__pic {
+  border: 2px solid #fdc812;
+  min-height: 733px;
+  max-width: 582px;
+  width: 100%;
+  position: relative;
+}
+.workshop__img {
+  position: absolute;
+  top: -50px;
+  left: 37px;
+}
+.workshop__figure {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: -14;
 }
 
 @media (max-width: 1280px) {
