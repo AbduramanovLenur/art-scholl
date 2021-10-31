@@ -9,6 +9,7 @@ body {
   font-family: "Jost", sans-serif;
   font-size: 20px;
   line-height: 1.4;
+  font-weight: 400;
 }
 
 a {
@@ -367,6 +368,91 @@ img {
 
 .title-mb {
   margin-bottom: 36px;
+}
+
+.people {
+  padding-bottom: 142px;
+  position: relative;
+}
+.people__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.people__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 61px;
+  margin-bottom: 121px;
+  margin-top: -25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.people__item {
+  margin-bottom: 10px;
+}
+.people__item:nth-child(2) {
+  margin-top: -45px;
+}
+.people__box {
+  position: relative;
+}
+.people__descr {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  background-color: #fff;
+  max-width: 443px;
+  padding: 9px 33px 21px 16px;
+}
+.people__descr-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #00213c;
+  margin-bottom: 6px;
+  max-width: 426px;
+}
+.people__descr-text {
+  font-size: 17px;
+  line-height: 1.41;
+  color: #ea557b;
+  max-width: 392px;
+}
+.people__title {
+  max-width: 731px;
+  text-align: center;
+  max-width: 731px;
+  margin-bottom: 21px;
+}
+.people__text {
+  font-weight: 500;
+  max-width: 855px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+.people__subtext {
+  max-width: 682px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+.people__figure {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 @media (max-width: 1280px) {

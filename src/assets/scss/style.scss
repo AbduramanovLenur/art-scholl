@@ -7,6 +7,7 @@ body {
     font-family: "Jost", sans-serif;
     font-size: 20px;
     line-height: 1.4;
+    font-weight: 400;
 }
 a {
     text-decoration: none;
@@ -55,7 +56,9 @@ img {
 @import "blocks/burger";
 @import "blocks/info";
 @import "blocks/lesson";
+@import "blocks/people";
 
 @import "media/intro-m";
 @import "media/info-m";
 @import "media/lesson-m";
+@import "media/people-m";
