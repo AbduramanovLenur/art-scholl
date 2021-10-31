@@ -9,6 +9,7 @@
 }
 @media (max-width: 1024px) {
     .people {
+        padding-bottom: 35px;
         &__list {
             margin-bottom: 85px;
         }
@@ -17,12 +18,15 @@
                 order: 2;
             }
             &:nth-child(2) {
-                margin-top: -45px;
+                margin-top: 0px;
                 order: 1;
             }
             &:nth-child(3) {
                 order: 3;
             }
+        }
+        &__figure {
+            width: 150px;
         }
     }
 }

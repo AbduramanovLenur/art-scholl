@@ -1,5 +1,5 @@
 .workshop {
-    padding: 90px 63px;
+    padding: 90px 0 63px;
     position: relative;
     &__inner {
         display: flex;
@@ -37,18 +37,21 @@
         &:not(:last-child) {
             margin-bottom: 10px;
         }
+        &:last-child {
+            margin-bottom: 50px;
+        }
     }
     &__pic {
         border: 2px solid #fdc812;
-        min-height: 733px;
-        max-width: 582px;
-        width: 100%;
+        height: 733px;
+        width: 582px;
         position: relative;
     }
     &__img {
         position: absolute;
         top: -50px;
         left: 37px;
+        object-fit: contain;
     }
     &__figure {
         position: absolute;

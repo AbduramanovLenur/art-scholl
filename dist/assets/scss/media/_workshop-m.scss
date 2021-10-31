@@ -1,0 +1,54 @@
+@media (max-width: 1556px) {
+    .workshop {
+        &__inner {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .workshop {
+        &__pic {
+            order: 1;
+        }
+        &__subtext {
+            order: 2;
+        }
+        &__figure {
+            left: -88px;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .workshop {
+        &__maintext,
+        &__subtext,
+        &__text {
+            padding-left: 0;
+        }
+        &__pic {
+            height: 500px;
+            width: 415px;
+        }
+        &__img {
+            height: 500px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .workshop {
+        &__pic {
+            border: none;
+        }
+        &__img {
+            top: 0;
+            right: 0;
+            width: 300px;
+        }
+        &__text {
+            font-size: 17px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
