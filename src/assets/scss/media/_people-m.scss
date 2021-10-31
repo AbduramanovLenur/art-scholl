@@ -1,0 +1,45 @@
+@media (max-width: 1549px) {
+    .people {
+        &__item {
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .people {
+        &__list {
+            margin-bottom: 85px;
+        }
+        &__item {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                margin-top: -45px;
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 3;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .people {
+        .people {
+            &__item {
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+            } 
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__figure {
+            max-width: 106px;
+        }
+    }
+}
