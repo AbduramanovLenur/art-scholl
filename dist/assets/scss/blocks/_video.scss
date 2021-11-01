@@ -1,3 +1,44 @@
+.video {
+    padding: 105px 0;
+    position: relative;
+    &__video {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        z-index: 15;
+        iframe {
+            padding: 20px;
+            border: 2px solid #7538ff;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+    &__item {
+        z-index: 14;
+        &:nth-child(even) {
+            margin-top: 75px;
+        }
+    }
+    &__figure-1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -14;
+        object-fit: contain;
+    }
+    &__figure-2 {
+        position: absolute;
+        left: 0;
+        bottom: 13px;
+        z-index: -15;
+        object-fit: contain;
+    }
+}
+
 .popup {
     display: none;
     position: fixed;

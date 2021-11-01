@@ -47,3 +47,10 @@
         }
     }
 }
+@media (max-width:320px) {
+    .people {
+        &__figure {
+            max-width: 65px;
+        }
+    }
+}
