@@ -96,9 +96,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
+/* harmony import */ var _modules_certificate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/certificate */ "./src/js/modules/certificate.js");
+
 
 document.addEventListener('DOMContentLoaded', function () {
   Object(_modules_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.hamburger', '.hamburger__menu', '.hamburger__close');
+  Object(_modules_certificate__WEBPACK_IMPORTED_MODULE_1__["default"])('.video__list');
 });
 
 /***/ }),
@@ -117,14 +120,77 @@ var burger = function burger(selectorHamburger, selectorMenu, selectorClose) {
   var menu = document.querySelector(selectorMenu);
   var close = document.querySelector(selectorClose);
   hamburger.addEventListener('click', function () {
+    document.body.style.overflow = 'hidden';
     menu.classList.add('active');
   });
   close.addEventListener('click', function () {
+    document.body.style.overflow = 'visible';
     menu.classList.remove('active');
   });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (burger);
+
+/***/ }),
+
+/***/ "./src/js/modules/certificate.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/certificate.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var certificate = function certificate(parentSelector) {
+  var parent = document.querySelector(parentSelector);
+  var imgPopup = document.createElement('div');
+  var bigImage = document.createElement('img');
+  var scroll = calcScrool();
+  imgPopup.classList.add('popup');
+  parent.appendChild(imgPopup);
+  imgPopup.style.justifyContent = 'center';
+  imgPopup.style.alignItems = 'center';
+  imgPopup.classList.remove('animate__animated', 'animate__fadeIn');
+  imgPopup.appendChild(bigImage);
+  parent.addEventListener('click', function (e) {
+    e.preventDefault();
+    var target = e.target;
+
+    if (target && target.classList.contains('video__img')) {
+      imgPopup.classList.add('animate__animated', 'animate__fadeIn');
+      imgPopup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      var path = target.parentNode.getAttribute('href');
+      bigImage.setAttribute('src', path);
+      document.body.style.marginRight = "".concat(scroll, "px");
+    }
+
+    ;
+
+    if (target && target.matches('div.popup')) {
+      imgPopup.style.display = 'none';
+      document.body.style.overflow = 'visible';
+      document.body.style.marginRight = "0px";
+    }
+
+    ;
+  });
+
+  function calcScrool() {
+    var div = document.createElement('div');
+    div.style.width = '50px';
+    div.style.height = '50px';
+    div.style.overflowY = 'scroll';
+    div.style.visibility = 'hidden';
+    document.body.appendChild(div);
+    var scrollWidth = div.offsetWidth - div.clientWidth;
+    div.remove();
+    return scrollWidth;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (certificate);
 
 /***/ })
 
