@@ -36,6 +36,7 @@
 }
 @media (max-width: 480px) {
     .workshop {
+        padding-bottom: 0;
         &__pic {
             border: none;
         }

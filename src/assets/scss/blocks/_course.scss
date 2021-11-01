@@ -1,0 +1,45 @@
+.course {
+    padding: 90px 0;
+    &__title {
+        font-size: 38px;
+        line-height: 1.44;
+        font-weight: 600;
+        color: #00213c;
+        margin-bottom: 12px;
+    }
+    &__text {
+        max-width: 1007px;
+        margin-bottom: 26px;
+    }
+    &__subtitle {
+        font-size: 38px;
+        line-height: 1.44;
+        font-weight: 600;
+        color: #00213c;
+        border-bottom: 1px solid #00213c;
+        padding-bottom: 11px;
+        margin-bottom: 90px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__pic {
+        &-posleft {
+            position: relative;
+        }
+        &-mr {
+            margin-right: 23px;
+        }
+    }
+    &__img-right {
+        position: absolute;
+        bottom: -16px;
+        left: 42px;
+    }
+}

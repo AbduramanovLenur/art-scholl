@@ -151,6 +151,7 @@ var certificate = function certificate(parentSelector) {
   parent.appendChild(imgPopup);
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
+  imgPopup.style.zIndex = '20';
   imgPopup.classList.remove('animate__animated', 'animate__fadeIn');
   imgPopup.appendChild(bigImage);
   parent.addEventListener('click', function (e) {

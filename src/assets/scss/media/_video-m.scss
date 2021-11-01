@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .video {
+        padding: 50px 0;
+    }
+}
+@media (max-width: 432px) {
+    .video {
+        &__item:nth-child(even) {
+            margin-top: 0;
+        }
+    }
+}
