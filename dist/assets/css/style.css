@@ -622,6 +622,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .course__pic-posleft {
   position: relative;
@@ -635,12 +637,20 @@ img {
 .course__pic-ml {
   margin-left: 150px;
 }
+.course__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .course__img-right {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   bottom: -16px;
   left: 42px;
 }
 .course__img-left {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   bottom: -16px;
   right: 41px;
@@ -651,7 +661,7 @@ img {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   background-image: url("../img/intro/intro-bg.png");
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   margin-bottom: 30px;
@@ -1053,5 +1063,56 @@ img {
 @media (max-width: 432px) {
   .video__item:nth-child(even) {
     margin-top: 0;
+  }
+}
+@media (max-width: 1280px) {
+  .course__item:nth-child(2) .course__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .course__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .course__content-title span {
+    padding-left: 35px;
+  }
+  .course__content-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .course__content-next {
+    padding-left: 0;
+    text-align: center;
+  }
+  .course__pic {
+    margin-bottom: 10px;
+  }
+  .course__pic-mr {
+    margin-right: 0px;
+  }
+  .course__pic-ml {
+    margin-left: 0px;
+  }
+  .course__img-right {
+    bottom: 38px;
+    left: 25px;
+  }
+  .course__img-left {
+    bottom: 38px;
+    right: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .course__content-title {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .course__content-title span {
+    padding-left: 0;
   }
 }

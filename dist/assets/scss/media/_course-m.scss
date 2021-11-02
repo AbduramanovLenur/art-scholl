@@ -1,0 +1,53 @@
+@media (max-width: 1280px) {
+    .course {
+        &__item:nth-child(2) &__content {
+            order: 2;
+        }
+        &__box {
+            justify-content: center;
+        }
+        &__content {
+            &-title {
+                span {
+                    padding-left: 35px;
+                }
+            }
+            &-info {
+                justify-content: center;
+            }
+            &-next {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+        &__pic {
+            margin-bottom: 10px;
+            &-mr {
+                margin-right: 0px;
+            }
+            &-ml {
+                margin-left: 0px;
+            }
+        }
+        &__img-right {
+            bottom: 38px;
+            left: 25px;
+        }
+        &__img-left {
+            bottom: 38px;
+            right: 25px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .course {
+        &__content-title {
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .course__content-title span {
+        padding-left: 0;
+    }
+}

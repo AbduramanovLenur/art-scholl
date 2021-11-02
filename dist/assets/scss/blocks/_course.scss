@@ -28,6 +28,7 @@
     &__box {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__pic {
         &-posleft {
@@ -43,12 +44,17 @@
             margin-left: 150px;
         }
     }
+    &__img {
+        object-fit: cover;
+    }
     &__img-right {
+        object-fit: cover;
         position: absolute;
         bottom: -16px;
         left: 42px;
     }
     &__img-left {
+        object-fit: cover;
         position: absolute;
         bottom: -16px;
         right: 41px;
@@ -60,7 +66,7 @@
             text-transform: uppercase;
             -webkit-text-fill-color: transparent;
             background-image: url("../img/intro/intro-bg.png");
-            background-position: right center;
+            background-position: center;
             background-repeat: no-repeat;
             -webkit-background-clip: text;
             margin-bottom: 30px;
