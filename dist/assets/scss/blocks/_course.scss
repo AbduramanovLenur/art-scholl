@@ -36,10 +36,80 @@
         &-mr {
             margin-right: 23px;
         }
+        &-posright {
+            position: relative;
+        }
+        &-ml {
+            margin-left: 150px;
+        }
     }
     &__img-right {
         position: absolute;
         bottom: -16px;
         left: 42px;
+    }
+    &__img-left {
+        position: absolute;
+        bottom: -16px;
+        right: 41px;
+    }
+    &__content {
+        &-title {
+            font-size: 45px;
+            font-weight: 600;
+            text-transform: uppercase;
+            -webkit-text-fill-color: transparent;
+            background-image: url("../img/intro/intro-bg.png");
+            background-position: right center;
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            margin-bottom: 30px;
+            span {
+                padding-left: 110px;
+            }
+        }
+        &-item {
+            margin-bottom: 13px;
+        }
+        &-text {
+            font-weight: 500;
+            max-width: 847px;
+            position: relative;
+            padding-left: 26px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 19px;
+                height: 19px;
+                background-color: #02c382;
+                border-radius: 50%;
+            }
+        }
+        &-next {
+            font-weight: 500;
+            margin-bottom: 43px;
+            padding-left: 20px;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                color: #ff0000;
+            }
+        }
+        &-arrow {
+            margin-left: 8px;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &-price {
+            font-size: 30px;
+            line-height: 1.43;
+            margin-right: 20px;
+        }
     }
 }
