@@ -20,6 +20,9 @@
         padding-bottom: 11px;
         margin-bottom: 90px;
     }
+    &__list {
+        margin-bottom: 94px;
+    }
     &__item {
         &:not(:last-child) {
             margin-bottom: 60px;
@@ -66,7 +69,7 @@
             text-transform: uppercase;
             -webkit-text-fill-color: transparent;
             background-image: url("../img/intro/intro-bg.png");
-            background-position: center;
+            background-position: center -210px;
             background-repeat: no-repeat;
             -webkit-background-clip: text;
             margin-bottom: 30px;
@@ -117,5 +120,9 @@
             line-height: 1.43;
             margin-right: 20px;
         }
+    }
+
+    &__subtitle-tematic {
+        padding-top: 90px;
     }
 }

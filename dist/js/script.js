@@ -102,6 +102,12 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', function () {
   Object(_modules_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.hamburger', '.hamburger__menu', '.hamburger__close');
   Object(_modules_certificate__WEBPACK_IMPORTED_MODULE_1__["default"])('.video__list');
+  var swiper = new Swiper('.swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
 });
 
 /***/ }),

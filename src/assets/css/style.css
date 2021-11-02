@@ -612,6 +612,9 @@ img {
   padding-bottom: 11px;
   margin-bottom: 90px;
 }
+.course__list {
+  margin-bottom: 94px;
+}
 .course__item:not(:last-child) {
   margin-bottom: 60px;
 }
@@ -661,7 +664,7 @@ img {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   background-image: url("../img/intro/intro-bg.png");
-  background-position: center;
+  background-position: center -210px;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   margin-bottom: 30px;
@@ -719,6 +722,9 @@ img {
   font-size: 30px;
   line-height: 1.43;
   margin-right: 20px;
+}
+.course__subtitle-tematic {
+  padding-top: 90px;
 }
 
 @media (max-width: 1280px) {
@@ -1109,6 +1115,14 @@ img {
 @media (max-width: 1024px) {
   .course__content-title {
     text-align: center;
+  }
+}
+@media (max-width: 786px) {
+  .course {
+    padding: 0;
+  }
+  .course__subtitle-tematic {
+    padding-top: 0;
   }
 }
 @media (max-width: 400px) {

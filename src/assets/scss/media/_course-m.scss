@@ -46,6 +46,14 @@
         }
     }
 }
+@media (max-width: 786px) {
+    .course {
+        &__subtitle-tematic {
+            padding-top: 0;
+        }
+        padding: 0;
+    }
+}
 @media (max-width: 400px) {
     .course__content-title span {
         padding-left: 0;
