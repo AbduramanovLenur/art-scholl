@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .review {
+        padding-top: 35px;
+        padding-bottom: 30px;
+        &__list {
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -790,6 +790,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -14;
 }
 
 .swiper-pagination-bullet {
@@ -1211,5 +1212,19 @@ img {
 @media (max-width: 400px) {
   .course__content-title span {
     padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .review {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .review__list {
+    padding-top: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .review__item:nth-child(2) {
+    margin-top: 0;
   }
 }
