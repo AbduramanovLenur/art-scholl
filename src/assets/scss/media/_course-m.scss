@@ -51,7 +51,19 @@
         &__subtitle-tematic {
             padding-top: 0;
         }
-        padding: 0;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .course {
+        &__content {
+            &-title {
+                font-size: 28px;
+            }
+        }
+        &__list {
+            margin-bottom: 25px;
+        }
     }
 }
 @media (max-width: 400px) {
