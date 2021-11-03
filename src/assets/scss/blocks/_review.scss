@@ -1,0 +1,30 @@
+.review {
+    position: relative;
+    padding: 90px 0 141px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding-top: 298px;
+        padding-bottom: 54px;
+    }
+    &__item {
+        &:nth-child(2) {
+            margin-top: -213px;
+        }
+    }
+    &__figure {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: #d2d1d1;
+    width: 20px;
+    height: 20px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #00C280;
+}

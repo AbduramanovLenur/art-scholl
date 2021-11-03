@@ -590,7 +590,7 @@ img {
 }
 
 .course {
-  padding: 90px 0;
+  padding: 90px 0 52px;
 }
 .course__title {
   font-size: 38px;
@@ -766,6 +766,40 @@ img {
 .swiper-button-prev::after {
   color: #fff;
   font-size: 25px;
+}
+
+.review {
+  position: relative;
+  padding: 90px 0 141px;
+}
+.review__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+  padding-top: 298px;
+  padding-bottom: 54px;
+}
+.review__item:nth-child(2) {
+  margin-top: -213px;
+}
+.review__figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d2d1d1;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00C280;
 }
 
 @media (max-width: 1280px) {

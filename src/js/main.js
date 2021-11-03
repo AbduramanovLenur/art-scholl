@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.swiper-button-prev',
         },
 
-        spaceBetween: 30
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        spaceBetween: 30,
     });
 });
