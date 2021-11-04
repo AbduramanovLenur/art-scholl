@@ -1,4 +1,4 @@
-const certificate = (parentSelector) => {
+const gallery = (parentSelector, triggerSelector) => {
     const parent = document.querySelector(parentSelector);
     const imgPopup = document.createElement('div');
     const bigImage = document.createElement('img');
@@ -18,7 +18,7 @@ const certificate = (parentSelector) => {
 
         let target = e.target;
 
-        if (target && target.classList.contains('video__img')) {
+        if (target && target.classList.contains(triggerSelector)) {
             imgPopup.classList.add('animate__animated', 'animate__fadeIn');
             imgPopup.style.display = 'flex';
             document.body.style.overflow = 'hidden';
@@ -50,4 +50,4 @@ const certificate = (parentSelector) => {
     }
 };
 
-export default certificate;
+export default gallery;

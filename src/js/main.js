@@ -1,9 +1,9 @@
 import burger from "./modules/burger";
-import certificate from "./modules/certificate";
+import gallery from "./modules/gallery";
 
 document.addEventListener('DOMContentLoaded', () => {
     burger('.hamburger', '.hamburger__menu', '.hamburger__close');
-    certificate('.video__list');
+    gallery('.video__list', 'video__img');
 
     const swiper = new Swiper('.swiper', {
         navigation: {

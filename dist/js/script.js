@@ -96,12 +96,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
-/* harmony import */ var _modules_certificate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/certificate */ "./src/js/modules/certificate.js");
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
 
 
 document.addEventListener('DOMContentLoaded', function () {
   Object(_modules_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.hamburger', '.hamburger__menu', '.hamburger__close');
-  Object(_modules_certificate__WEBPACK_IMPORTED_MODULE_1__["default"])('.video__list');
+  Object(_modules_gallery__WEBPACK_IMPORTED_MODULE_1__["default"])('.video__list', 'video__img');
   var swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
@@ -144,16 +144,16 @@ var burger = function burger(selectorHamburger, selectorMenu, selectorClose) {
 
 /***/ }),
 
-/***/ "./src/js/modules/certificate.js":
-/*!***************************************!*\
-  !*** ./src/js/modules/certificate.js ***!
-  \***************************************/
+/***/ "./src/js/modules/gallery.js":
+/*!***********************************!*\
+  !*** ./src/js/modules/gallery.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var certificate = function certificate(parentSelector) {
+var gallery = function gallery(parentSelector, triggerSelector) {
   var parent = document.querySelector(parentSelector);
   var imgPopup = document.createElement('div');
   var bigImage = document.createElement('img');
@@ -169,7 +169,7 @@ var certificate = function certificate(parentSelector) {
     e.preventDefault();
     var target = e.target;
 
-    if (target && target.classList.contains('video__img')) {
+    if (target && target.classList.contains(triggerSelector)) {
       imgPopup.classList.add('animate__animated', 'animate__fadeIn');
       imgPopup.style.display = 'flex';
       document.body.style.overflow = 'hidden';
@@ -202,7 +202,7 @@ var certificate = function certificate(parentSelector) {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (certificate);
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
 
 /***/ })
 
