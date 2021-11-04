@@ -4,6 +4,7 @@ import gallery from "./modules/gallery";
 document.addEventListener('DOMContentLoaded', () => {
     burger('.hamburger', '.hamburger__menu', '.hamburger__close');
     gallery('.video__list', 'video__img');
+    gallery('.work__wrapper', 'work__img');
 
     const swiper = new Swiper('.swiper', {
         navigation: {
