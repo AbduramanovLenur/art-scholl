@@ -1,9 +1,9 @@
-@mixin grid-pos($grid-col-start, $grid-col-end, $grid-row-star, $grid-row-end) {
-    grid-column-start: $grid-col-start;
-    grid-column-end: $grid-col-end;
-    grid-row-start: $grid-row-start;
-    grid-row-end: $grid-row-end;
-}
+// @mixin grid-pos($grid-col-start, $grid-col-end, $grid-row-star, $grid-row-end) {
+//     grid-column-start: $grid-col-start;
+//     grid-column-end: $grid-col-end;
+//     grid-row-start: $grid-row-start;
+//     grid-row-end: $grid-row-end;
+// }
 
 .work {
     position: relative;
@@ -92,7 +92,7 @@
     &__circle {
         &-1 {
             position: absolute;
-            left: 70px;
+            left: 0;
             bottom: 530px;
         }
         &-2 {

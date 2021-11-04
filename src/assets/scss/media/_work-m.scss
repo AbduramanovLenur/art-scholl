@@ -1,0 +1,100 @@
+@media (max-width: 1570px) {
+    .work {
+        &__circle {
+            &-1 {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .work {
+        &__circle {
+            &-1 {
+                left: -130px;
+            }
+            &-2 {
+                display: none;
+            }
+            &-3 {
+                left: 328px;
+            }
+        }
+        &__figure {
+            bottom: 85px;
+        }
+        &__box:nth-child(5) {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        &__box:nth-child(10) {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .work {
+        padding-bottom: 150px;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__box:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        &__box:nth-child(2) {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        &__box:nth-child(3) {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        &__box:nth-child(4) {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        &__box:nth-child(5) {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        &__box:nth-child(6) {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        &__box:nth-child(7) {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        &__box:nth-child(8) {
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        &__box:nth-child(9) {
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        &__box:nth-child(10) {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        &__circle-3 {
+            left: 248px;
+            width: 100px;
+        }
+        &__figure {
+            bottom: 120px;
+        }
+    }
+}
