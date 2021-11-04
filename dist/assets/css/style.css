@@ -1418,3 +1418,8 @@ img {
     bottom: 120px;
   }
 }
+@media (max-width: 320px) {
+  .work__circle-3 {
+    display: none;
+  }
+}

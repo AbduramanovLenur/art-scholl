@@ -98,3 +98,12 @@
         }
     }
 }
+@media (max-width: 320px) {
+    .work {
+        &__circle {
+            &-3 {
+                display: none;
+            }
+        }
+    }
+}
