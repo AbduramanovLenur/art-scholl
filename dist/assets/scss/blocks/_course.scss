@@ -151,15 +151,3 @@
         padding-top: 90px;
     }
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-    background-color: #fa3465;
-    width: 41px;
-    height: 41px;
-    border-radius: 50%;
-    &::after {
-        color: #fff;
-        font-size: 25px;
-    }
-}

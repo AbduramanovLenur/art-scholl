@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .question {
+        padding: 5px 0 55px;
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__accordion {
+            margin-bottom: 90px;
+        }
+        &__text {
+            font-size: 19px;
+        }
+    }
+}
+@media (max-width: 461px) {
+    .question {
+        &__btn {
+            padding: 9px 18px;
+        }
+        &__course {
+            padding: 9px 20px;
+        }
+    }
+}

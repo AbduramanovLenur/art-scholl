@@ -50,6 +50,25 @@ img {
     font-weight: 600;
     color: #00213C;
 }
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #fa3465;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    &::after {
+        color: #fff;
+        font-size: 25px;
+    }
+}
+.swiper-pagination-bullet {
+    background-color: #d2d1d1;
+    width: 20px;
+    height: 20px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #00C280;
+}
 
 @import "blocks/header";
 @import "blocks/intro";
@@ -73,3 +92,4 @@ img {
 @import "media/course-m";
 @import "media/review-m";
 @import "media/work-m";
+@import "media/question-m";

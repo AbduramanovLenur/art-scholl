@@ -19,6 +19,7 @@
     }
     &__union {
         display: block;
+        margin-left: 10px;
     }
     &__content {
         max-height: 0;
@@ -42,6 +43,7 @@
         font-size: 17px;
         line-height: 1.41;
         color: #595858;
+        text-align: center;
         padding: 9px 35px;
         transition: all .3s ease-in;
         &:hover {
