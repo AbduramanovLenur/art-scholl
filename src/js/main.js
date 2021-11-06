@@ -21,4 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         spaceBetween: 30,
     });
+
+    AOS.init();
 });

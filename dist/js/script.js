@@ -952,6 +952,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     spaceBetween: 30
   });
+  AOS.init();
 });
 
 /***/ }),
