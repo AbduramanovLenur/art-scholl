@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .footer-info {
+        padding: 35px 0 35px;
+        &__inner {
+            flex-direction: column;
+        }
+        &__pic {
+            margin-bottom: 45px;
+        }
+        &__list {
+            margin-bottom: 15px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+}
