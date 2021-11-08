@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+    .menu__item.footer__item:nth-child(3) {
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 40px;
+        &__menu {
+            display: block;
+        }
+        &__item {
+            &:nth-child(1) {
+                margin-bottom: 0;
+            }
+            &:nth-child(3) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 605px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item {
+            font-size: 15px;
+        }
+        &__btn {
+            padding: 9px 6px;
+            font-size: 15px;
+        }
+        &__tel {
+            font-size: 15px;
+        }
+    }
+}

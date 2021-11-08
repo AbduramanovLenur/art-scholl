@@ -31,8 +31,10 @@ img {
     margin: 0 auto;
 }
 .container-fluid {
-    max-width: 1640px;
+    max-width: 1670px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .btn {
     display: block;
@@ -100,3 +102,4 @@ img {
 @import "media/work-m";
 @import "media/question-m";
 @import "media/footer-info-m";
+@import "media/footer-m";

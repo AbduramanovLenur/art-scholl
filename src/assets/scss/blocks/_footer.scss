@@ -5,6 +5,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__box {
+            margin-right: 20px;
+    }
     &__pic {
         margin-bottom: 22px;
     }
@@ -29,6 +32,9 @@
         }
     }
     &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 171px;
     }
     &__btn {

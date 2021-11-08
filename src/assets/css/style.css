@@ -39,8 +39,10 @@ img {
 }
 
 .container-fluid {
-  max-width: 1640px;
+  max-width: 1670px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
@@ -1062,6 +1064,9 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__box {
+  margin-right: 20px;
+}
 .footer__pic {
   margin-bottom: 22px;
 }
@@ -1091,6 +1096,16 @@ img {
           order: 4;
 }
 .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 171px;
 }
 .footer__btn {
@@ -1683,5 +1698,40 @@ img {
   }
   .footer-info__text {
     text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .menu__item.footer__item:nth-child(3) {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 40px;
+  }
+  .footer__menu {
+    display: block;
+  }
+  .footer__item:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .footer__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 605px) {
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__item {
+    font-size: 15px;
+  }
+  .footer__btn {
+    padding: 9px 6px;
+    font-size: 15px;
+  }
+  .footer__tel {
+    font-size: 15px;
   }
 }
