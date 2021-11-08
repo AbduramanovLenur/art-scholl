@@ -30,6 +30,10 @@ img {
     max-width: 1550px;
     margin: 0 auto;
 }
+.container-fluid {
+    max-width: 1640px;
+    margin: 0 auto;
+}
 .btn {
     display: block;
     background-color: #f93264;
@@ -83,6 +87,7 @@ img {
 @import "blocks/work";
 @import "blocks/question";
 @import "blocks/info-footer";
+@import "blocks/footer";
 
 @import "media/intro-m";
 @import "media/info-m";

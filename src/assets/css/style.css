@@ -38,6 +38,11 @@ img {
   margin: 0 auto;
 }
 
+.container-fluid {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
 .btn {
   display: block;
   background-color: #f93264;
@@ -1041,6 +1046,67 @@ img {
   color: #fff;
   font-weight: 400;
   margin-bottom: 7px;
+}
+
+.footer {
+  padding: 40px 0 105px;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__pic {
+  margin-bottom: 22px;
+}
+.footer__menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 282px;
+}
+.footer__item:nth-child(1) {
+  margin-bottom: 28px;
+}
+.footer__item:nth-child(2) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.footer__item:nth-child(3) {
+  margin-right: 0;
+  margin-bottom: 28px;
+}
+.footer__item:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.footer__contact {
+  max-width: 171px;
+}
+.footer__btn {
+  padding: 9px 18px;
+  font-size: 17px;
+  line-height: 1.41;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 17px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.footer__btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 @media (max-width: 1280px) {
