@@ -7,7 +7,8 @@
     .footer {
         padding: 40px 0 40px;
         &__menu {
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
         &__item {
             &:nth-child(1) {
@@ -21,11 +22,13 @@
 }
 @media (max-width: 605px) {
     .footer {
+        padding: 56px 0 56px;
         &__inner {
             flex-wrap: wrap;
         }
         &__item {
             font-size: 15px;
+            margin-bottom: 10px !important;
         }
         &__btn {
             padding: 9px 6px;
@@ -34,5 +37,28 @@
         &__tel {
             font-size: 15px;
         }
+    }
+}
+@media (max-width: 470px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+        }
+        &__pic {
+            text-align: center;
+        }
+        &__faq {
+            display: flex;
+            text-align: center;
+        }
+        &__menu {
+            align-items: center;
+        }
+        &__item {
+            margin-right: 0 !important;
+        }
+    }
+    .menu {
+        margin-right: 0;
     }
 }
