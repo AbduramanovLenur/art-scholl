@@ -53,3 +53,10 @@
         }
     }
 }
+@media (max-width: 350px) {
+    .workshop {
+        &__img {
+            left: 0;
+        }
+    }
+}

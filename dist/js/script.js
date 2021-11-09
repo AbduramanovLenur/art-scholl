@@ -933,6 +933,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 /* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
 /* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
+/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
+
 
 
 
@@ -941,6 +943,7 @@ document.addEventListener('DOMContentLoaded', function () {
   Object(_modules_gallery__WEBPACK_IMPORTED_MODULE_1__["default"])('.video__list', 'video__img');
   Object(_modules_gallery__WEBPACK_IMPORTED_MODULE_1__["default"])('.work__wrapper', 'work__img');
   Object(_modules_accordion__WEBPACK_IMPORTED_MODULE_2__["default"])('.question__text');
+  Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_3__["default"])('.intro-link');
   var swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
@@ -1078,6 +1081,33 @@ var gallery = function gallery(parentSelector, triggerSelector) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (gallery);
+
+/***/ }),
+
+/***/ "./src/js/modules/scrolling.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/scrolling.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var scroll = function scroll(upSelector) {
+  var upElement = document.querySelector(upSelector);
+  upElement.classList.add('animate__animated', 'animate__fadeOut');
+  window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop > 1650) {
+      upElement.classList.add('animate__fadeIn');
+      upElement.classList.remove('animate__fadeOut');
+    } else {
+      upElement.classList.add('animate__fadeOut');
+      upElement.classList.remove('animate__fadeIn');
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (scroll);
 
 /***/ })
 

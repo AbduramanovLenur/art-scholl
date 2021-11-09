@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Jost", sans-serif;
   font-size: 20px;
@@ -69,7 +73,20 @@ img {
   font-size: 38px;
   line-height: 1.44;
   font-weight: 600;
-  color: #00213C;
+  color: #00213c;
+}
+
+.intro-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.arrow-up {
+  width: 70px;
+  height: 70px;
 }
 
 .swiper-button-next,
@@ -92,7 +109,7 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #00C280;
+  background-color: #00c280;
 }
 
 .header {
@@ -1461,6 +1478,11 @@ img {
   }
   .workshop__text:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 350px) {
+  .workshop__img {
+    left: 0;
   }
 }
 @media (max-width: 768px) {
