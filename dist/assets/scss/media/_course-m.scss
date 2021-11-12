@@ -22,12 +22,6 @@
         }
         &__pic {
             margin-bottom: 10px;
-            &-mr {
-                margin-right: 0px;
-            }
-            &-ml {
-                margin-left: 0px;
-            }
         }
         &__img-right {
             bottom: 38px;
@@ -36,6 +30,16 @@
         &__img-left {
             bottom: 38px;
             right: 25px;
+        }
+    }
+}
+@media (max-width: 1158px) {
+    .course {
+        &__pic-mr {
+            margin-right: 0px;
+        }
+        &__pic-ml {
+            margin-left: 0px;
         }
     }
 }
